@@ -1,0 +1,30 @@
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: $white-color;
+    border-radius: 10px;
+    margin-bottom: 68px;
+
+    &-title {
+        width: 370px;
+        font-size: 3.5rem;
+        font-weight: 500;
+        line-height: calc(45/35);
+        color: $header-color;
+        padding-bottom: 20px;
+    }
+
+    &-text {
+        line-height: calc(30/16);
+    }
+
+    &-btn {
+        padding: 18px 65px;
+        line-height: calc(25/16);
+        color: $white-color;
+        font-weight: 700;
+        border: none;
+    }
+}

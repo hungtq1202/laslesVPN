@@ -1,0 +1,40 @@
+.started {
+    display: flex;
+    position: relative;
+    padding-bottom: 145px;
+    &-wrapper {
+        max-width: 555px;
+    }
+
+    &-title {
+        font-size: 5rem;
+        font-weight: 500;
+        color: $header-color;
+        margin: 0;
+        line-height: calc(70/50);
+    }
+
+    &-title strong {
+        font-weight: 700;
+    }
+
+    &-text {
+        line-height: calc(30/16);
+        padding-bottom: 68px;
+    }
+
+    &-btn__link {
+        color: $white-color;
+        font-size: 1.6rem;
+        line-height: calc(30/16);
+        padding: 18px 78px;
+        border: none;
+        font-weight: 700;
+    }
+
+    &-img {
+        position: absolute;
+        top: 0;
+        right: -42px;
+    }
+}

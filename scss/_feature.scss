@@ -1,0 +1,33 @@
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0 170px;
+    padding-bottom: 130px;
+
+    &-title {
+        font-size: 3.5rem;
+        line-height: calc(50/35);
+        color: $header-color;
+        font-weight: 500;
+        max-width: 384px;
+    }
+
+    &-text {
+        line-height: calc(30/16);
+        margin: 20px 0 5px 0;
+    }
+
+    &-list {
+        list-style: none;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        font-size: 1.4rem;
+        line-height: calc(30/14);
+        margin-top: 15px;
+    }
+
+}

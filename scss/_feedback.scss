@@ -1,0 +1,122 @@
+.feedback {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 72px;
+
+    &-title {
+        max-width: 448px;
+        font-size: 3.5rem;
+        line-height: calc(50/35);
+        font-weight: 500;
+        text-align: center;
+        color: $header-color;
+    }
+
+    &-text {
+        padding: 20px 0 60px 0;
+        font-size: 1.6rem;
+        line-height: calc(30/16);
+        max-width: 555px;
+        text-align: center;
+    }
+
+    &-list {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto;
+        grid-gap: 0 50px;
+        padding-bottom: 60px;
+    }
+
+    &-item {
+        border: 2px solid $borderFull-color;
+        border-radius: 10px;
+        padding: 20px 30px;
+    }
+
+    &-item__active {
+        border: 2px solid $primary-color;
+    }
+
+    &-item__user {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 15% 55% 30%;
+        grid-gap: 16px;
+    }
+
+    &-item__name {
+        font-size: 1.8rem;
+        line-height: calc(30/18);
+        color: $header-color;
+        font-weight: 500;
+    }
+
+    &-item__rate {
+        display: flex;
+        gap: 0 8px;
+    }
+
+    &-item__star {
+        width: 16px;
+        height: 16px;
+    }
+
+    &-item__text {
+        line-height: calc(30/16);
+        padding-top: 8px;
+        color: $header-color;
+    }
+
+    &-btn {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-btn__wrapper {
+        display: flex;
+        gap: 0 15px;
+    }
+
+    &-btn__common {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    &-btn__img  {
+        padding: 15px;
+        width: 60px;
+        height: 60px;
+    }
+
+    &-btn__pre {
+        border: 1px solid $primary-color;
+    }
+
+    &-btn__next {
+        background-color: $primary-color;
+    }
+
+    &-btn__main {
+        width: 45px;
+        height: 15px;
+        background-color: $primary-color;
+        border-radius: 10px;
+    }
+
+    &-btn__small {
+        width: 15px;
+        height: 15px;
+        background-color: $borderFull-color;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &-btn-active {
+        background-color: $primary-color;
+    }
+}

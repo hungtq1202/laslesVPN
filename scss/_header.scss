@@ -1,0 +1,61 @@
+.header {
+    padding: 50px 0 90px 0;
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 4rem;
+        list-style: none;
+    }
+
+    &-link {
+        position: relative;
+        color: $text-color;
+        transition: all 0.2s linear;
+    }
+    
+    &-link:hover {
+        color: $primary-color;
+    }
+
+    &-link:hover:before {
+        width: 100%;
+    }
+
+    &-link::before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 0;
+        background-color: $primary-color;  
+        transition: all 0.2s linear;
+        z-index: 1;     
+    }
+
+    &-auth {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+    }
+
+    &-signin {
+        color: $header-color;
+        font-weight: 500;
+        border: none;
+        background-color: $white-color;
+    }
+
+    &-signup {
+        padding: 13px 45px;
+        font-weight: 500;
+        background-color: $white-color;
+    }
+}
